@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.square {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 2px; /* Tambahkan sedikit jarak antar kotak */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px; /* Menambah lebar agar sesuai dengan jarak antar kotak */
+  
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 250px;
+  text-align: center; /* Menambahkan agar status di tengah */
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90px; /* Menyesuaikan lebar untuk layar kecil */
+  }
+
+  .square {
+    width: 25px; /* Mengecilkan kotak pada layar kecil */
+    height: 25px;
+    font-size: 1rem;
+  }
+
+  .status {
+    width: 200px; /* Menyesuaikan lebar status pada layar kecil */
+  }
+}
